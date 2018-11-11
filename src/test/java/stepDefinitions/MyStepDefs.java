@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import browserFactory.BrowserFactory;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,6 +9,9 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import pageObjects.*;
 import utils.TestDataRandom;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyStepDefs {
     LoginPage loginPage;
@@ -21,6 +25,11 @@ public class MyStepDefs {
     AddServiceCategory addServiceCategory;
     EditServiceCategory editServiceCategory;
     ServiceVendorList serviceVendorList;
+    ServiceSubCategory serviceSubCategory;
+    AddServiceSubCategory addServiceSubCategory;
+    VendorList vendorList;
+    EventsList eventsList;
+    AddEvent addEvent;
     public static String randomData = RandomStringUtils.randomAlphabetic(4);
 
 
@@ -29,11 +38,7 @@ public class MyStepDefs {
     @Given("^admin is on login page$")
     public void admin_is_on_login_page() throws Throwable {
         Assert.assertEquals(LoginPage.verifyHomepage(), "http://mca.bananaappscenter.com/");
-        String s = "abcnjkjhuhuhuuuhuhu";
-        System.out.println(RandomStringUtils.random(3, s));
-        System.out.println(RandomStringUtils.randomAlphabetic(4));
-        System.out.println(System.currentTimeMillis());
-        System.out.println(Math.max(2, 1));
+
     }
 
     @When("^admin enters email as \"([^\"]*)\", password as \"([^\"]*)\"$")
@@ -43,12 +48,21 @@ public class MyStepDefs {
         LoginPage.login(BrowserFactory.properties.getProperty("adminEmail"), BrowserFactory.properties.getProperty("adminPassword"));
     }
 
+    //testing for above step with datatable
+
+    @When("^admin enters login details as below$")
+    public void admin_enters_login_details_as_below(DataTable dt) throws Throwable {
+        loginPage = new LoginPage();
+        List<List<String>> list = dt.raw();
+        LoginPage.login(list.get(1).get(0), list.get(1).get(1));
+    }
+
     @When("^admin enters email \"([^\"]*)\", password \"([^\"]*)\"$")
     public void admin_enters_email_password(String email, String pwd) throws Throwable {
         LoginPage.login(email, pwd);
     }
 
-    @When("^admin clicks on log in button$")
+  @When("^admin clicks on log in button$")
     public void admin_clicks_on_log_in_button() throws Throwable {
         LoginPage.clickOnLogin();
     }
@@ -90,7 +104,7 @@ public class MyStepDefs {
     @When("^admin search for a user with \"([^\"]*)\"in search field$")
     public void admin_search_for_a_user_with_in_search_field(String arg1) throws Throwable {
 //        arg1= RandomStringUtils.randomAlphabetic(4);
-        UsersListPage.searchField(TestDataRandom.inputRandomData());
+        UsersListPage.searchField(randomData);
     }
 
     @When("^admin selects activate type \"([^\"]*)\"$")
@@ -206,7 +220,8 @@ public class MyStepDefs {
 
     @When("^admin select vendor \"([^\"]*)\", branch_name \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
     public void admin_select_vendor_branch_name(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9) throws Throwable {
-        AddVendorBranch.enterVendorBranchMandatoryDetails(arg1, randomData, randomData, randomData, randomData, arg6, arg7, arg8, arg9);
+//        AddVendorBranch.enterVendorBranchMandatoryDetails(arg1, randomData, randomData, randomData, randomData, arg6, arg7, arg8, arg9);
+        AddVendorBranch.enterVendorBranchMandatoryDetails(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
     }
 
     @When("^admin clicks on add button$")
@@ -384,5 +399,90 @@ public class MyStepDefs {
     public void the_available_services_should_display() throws Throwable {
 
     }
+
+    // *** service sub category step definitions *** //
+
+    @Then("^admin clicks on service sub category page$")
+    public void admin_clicks_on_service_sub_category_page() throws Throwable {
+        DashBoard.clickOnServiceSubCategory();
+    }
+
+    @Given("^admin is on service sub category list page$")
+    public void admin_is_on_service_sub_category_list_page() throws Throwable {
+        serviceSubCategory = new ServiceSubCategory();
+        Assert.assertEquals(ServiceSubCategory.verifyServiceSubCategoryPage(), "List of Service Sub Categories");
+    }
+
+    @When("^admin selects add service sub category$")
+    public void admin_selects_add_service_sub_category() throws Throwable {
+        ServiceSubCategory.addServiceSubCategory();
+    }
+
+    @Then("^admin should see add service sub category page$")
+    public void admin_should_see_add_service_sub_category_page() throws Throwable {
+        addServiceSubCategory = new AddServiceSubCategory();
+        Assert.assertEquals(AddServiceSubCategory.verifyAddServiceSubCategoryPage(), "Edit SubCategory"); //text should be add SubCategory
+    }
+
+    @When("^admin selects service category type \"([^\"]*)\"$")
+    public void admin_selects_service_category_type(String cat_Name) throws Throwable {
+        AddServiceSubCategory.selectServiceCategory(cat_Name);
+    }
+
+    @When("^admin enters service sub category details \"([^\"]*)\", \"([^\"]*)\"$")
+    public void admin_enters_service_sub_category_details(String arg1, String arg2) throws Throwable {
+        AddServiceSubCategory.enterServiceSubCategoryDetails(arg1, arg2);
+    }
+
+    @Then("^the service sub category type \"([^\"]*)\" should be added successfully$")
+    public void the_service_sub_category_type_should_be_added_successfully(String arg1) throws Throwable {
+        ServiceSubCategory.search(arg1);
+    }
+
+    // *** add event step definitions *** //
+
+    @Given("^admin is on vendorlist page$")
+    public void admin_is_on_vendorlist_page() throws Throwable {
+        vendorList = new VendorList();
+        DashBoard.selectVendorList();
+        Assert.assertEquals(VendorList.verifyVendorListPage(), "List of vendors");
+    }
+
+    @When("^admin  add the event for vendor with name \"([^\"]*)\"$")
+    public void admin_add_the_event_for_vendor_with_name(String arg1) throws Throwable {
+        VendorList.search(arg1);
+        VendorList.addEvent();
+    }
+
+    @When("^admin can see the list of events page$")
+    public void admin_can_see_the_list_of_events_page() throws Throwable {
+        eventsList = new EventsList();
+        Assert.assertEquals(EventsList.verifyEventsListPage(), "List of Events");
+    }
+
+    @When("^admin can click on add event$")
+    public void admin_can_click_on_add_event() throws Throwable {
+        EventsList.clickOnAddEvent();
+    }
+
+    @Then("^admin can see the creat event page$")
+    public void admin_can_see_the_creat_event_page() throws Throwable {
+        addEvent = new AddEvent();
+//        Assert.assertEquals(AddEvent.verifyAddEventPage(), "Create Event");
+    }
+
+    @When("^admin enters the event details as \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+    public void admin_enters_the_event_details_as(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13) throws Throwable {
+        AddEvent.setSelectCategory(arg8);
+        AddEvent.enterEventDetails(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg9, arg10, arg11, arg12, arg13);
+    }
+
+    @Then("^admin should able to see the added event \"([^\"]*)\"$")
+    public void admin_should_able_to_see_the_added_event(String arg1) throws Throwable {
+        EventsList.search(arg1);
+        Assert.assertEquals(EventsList.getEventName(), arg1);
+    }
+
+
 
 }

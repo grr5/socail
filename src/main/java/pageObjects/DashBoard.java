@@ -44,6 +44,21 @@ public class DashBoard extends BasePage {
     @FindBy(xpath = "//*[@id=\"navigation\"]/ul/li[2]/ul/li[2]/a")
     static WebElement serviceVendorListLink;
 
+    @FindBy(xpath = "//*[@id=\"navigation\"]/ul/li[5]/ul/li[4]/a")
+    static WebElement serviceSubCategoryLink;
+@FindBy(linkText = "Vendor")
+static WebElement vendor;
+
+    @FindBy(linkText = "Vendor List")
+    static WebElement vendorlist;
+
+    public static void selectVendorList()
+    {
+     vendor.click();
+        vendorlist.click();
+    }
+
+
     public static void clickOnBranchList(){
         HoverOverHelper.hoverOver(branchLink);
         branchList.click();
@@ -56,12 +71,17 @@ public class DashBoard extends BasePage {
 
 
     public static String verifyDashboardPage(){
-        return header.getText().toString();
+        return header.getText();
     }
 
     public static void clickOnServiceCategory(){
         HoverOverHelper.hoverOver(mastersLink);
         serviceCategoryLink.click();
+    }
+
+    public static void clickOnServiceSubCategory(){
+        HoverOverHelper.hoverOver(mastersLink);
+        serviceSubCategoryLink.click();
     }
 
     public static void clickOnUsersList(){

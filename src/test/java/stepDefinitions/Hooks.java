@@ -9,7 +9,7 @@ import utils.MyUtilites;
 
 public class Hooks {
     BrowserFactory browserFactory;
-//
+
     @Before
     public void beforeScenario(Scenario scenario){
         browserFactory = new BrowserFactory();
@@ -23,8 +23,9 @@ public class Hooks {
     }
 
     @After
-    public void afterScenario(Scenario scenario){
-        MyUtilites.captureScreenshot(scenario);
-        BrowserFactory.closeBrowser();
+    public void afterScenario(Scenario scenario) throws Exception{
+//        MyUtilites.captureScreenshot(scenario);
+        MyUtilites.getScreenhot();
+//        BrowserFactory.closeBrowser();
     }
 }

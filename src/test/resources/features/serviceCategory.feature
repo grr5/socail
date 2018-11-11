@@ -21,7 +21,7 @@ Feature: Verify admin can add and edit service category
 
     Examples:
       | Category_Name | category_description | category_image                      | category_cover_image                | category_video_link |
-      | randomData | randomData      | C:/Users/Ravi/Desktop/images/a2.jpg | C:/Users/Ravi/Desktop/images/a2.jpg | www.youtub.com      |
+      | IT Consulting |IT consulting services| C:/Users/Ravi/Desktop/Project/it1.jpg | C:/Users/Ravi/Desktop/Project/itcover.jpg | www.youtub.com |
 
 
   @service_category_mandate_negative

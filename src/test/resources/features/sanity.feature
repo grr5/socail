@@ -1,11 +1,11 @@
 Feature: Verify admin can see the list of available users and can activate or de-activate
 
-  Background:
-    Given admin is on login page
-    When admin enters email as "email", password as "password"
-#    When admin enters email as "email_test", password as "password_test"
-    And admin clicks on log in button
-    Then admin should login and see dashboard page
+#  Background:
+#    Given admin is on login page
+#    When admin enters email as "email", password as "password"
+##    When admin enters email as "email_test", password as "password_test"
+#    And admin clicks on log in button
+#    Then admin should login and see dashboard page
 
 
     @negative_login
@@ -26,6 +26,14 @@ Feature: Verify admin can see the list of available users and can activate or de
       @user
     Scenario: admin should be able to see available user list
 
+        Given admin is on login page
+#        When admin enters email as "email", password as "password"
+        When admin enters login details as below
+        |email|password|
+        |admin@gmail.com|admin@123|
+        |jhggg|jkhjkhhkj|
+        And admin clicks on log in button
+        Then admin should login and see dashboard page
       Given admin is on dashboard page
       When admin clicks on user link
       Then admin should see the available user list successfully

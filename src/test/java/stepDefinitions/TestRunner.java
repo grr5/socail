@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import browserFactory.BrowserFactory;
+import com.aventstack.extentreports.ExtentTest;
 import com.cucumber.listener.ExtentProperties;
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
@@ -9,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import utils.MyUtilites;
 
 import java.io.File;
 
@@ -18,7 +20,10 @@ import java.io.File;
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:reports/report.html",
                 "html:target/cucumber-reports",
                 "json:target/cucumber-reports/Cucumber.json"},
-        tags = {"@user_active"}
+        tags = {"@janci"},
+        dryRun = false,
+        monochrome = true
+//        strict = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
@@ -29,7 +34,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     }
 
     @AfterClass
-    public static void writeExtentReport(){
+    public static void writeExtentReport() throws Exception{
+        ExtentTest logger;
 //        com.cucumber.listener.Reporter.loadXMLConfig(new File("src\\main\\resources\\extent-config.xml"));
         Reporter.loadXMLConfig(new File("src\\main\\resources\\extent-config.xml"));
         Reporter.setSystemInfo("User Name ", System.getProperty("user.name"));
@@ -38,6 +44,9 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         Reporter.setSystemInfo("Selenium", "3.14.0");
         Reporter.setSystemInfo("Maven", "3.5.4");
         Reporter.setSystemInfo("Java Version", "1.8.0_181");
+//        Reporter.addScreenCaptureFromPath(MyUtilites.getScreenhot());
+//        Reporter.addScreenCast(MyUtilites.getScreenhot());
+        Reporter.addScreenCaptureFromPath(MyUtilites.getScreenhot(), "this is title");
 //        Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
     }
 }

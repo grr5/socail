@@ -2,78 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd8d3087-2024-473f-bcf6-ad039004f3a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddServiceSubCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/EventsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ServiceSubCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/VendorList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/event.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/studentApp.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/vendorApp.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/clarks_autotestcore_2_0_15_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc0101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc0104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc0107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc0117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc0558.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1230.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1232.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1235.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1239.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1248.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestsScreenshots/abc1259.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199631160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199684952.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199769392.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199818922.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199844368.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199868199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199889956.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199907934.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541199974994.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200068741.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200086257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200125004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200268877.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200348975.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541200371901.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541241606899.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541241990502.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541242344458.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541242438246.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541242599505.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541243026286.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541243096173.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541243564401.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541243686996.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541243849403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541244111695.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541244944650.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541245279814.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541252854464.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541252901899.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541252973542.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541252986953.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253110182.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253121590.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253171005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253180624.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253207569.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253216159.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253665604.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenShots/1541253699549.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ConfigFileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/MyUtilites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/MyUtilites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TestDataRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/branchList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/branchList.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/event.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/event.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/sanity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/sanity.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/serviceCategory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/serviceCategory.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/browserFactory/BrowserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/browserFactory/BrowserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DashBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/DashBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/ConfigFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/MyUtilites.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/MyUtilites.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/TestDataRandom.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/branchList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/branchList.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/event.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/event.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/sanity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/sanity.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/serviceCategory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/serviceCategory.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestRunner.class" afterDir="false" />
@@ -90,64 +65,66 @@
     <session id="1298339716">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="39" />
+          <entry key="project.open.time.1" value="8" />
+          <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="4" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
-          <entry key="feature" value="44" />
+          <entry key="class" value="6" />
+          <entry key="feature" value="51" />
           <entry key="html" value="4" />
-          <entry key="java" value="67" />
+          <entry key="java" value="97" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
-          <entry key="png" value="22" />
-          <entry key="properties" value="4" />
-          <entry key="xml" value="6" />
+          <entry key="png" value="25" />
+          <entry key="properties" value="8" />
+          <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="Cucumber" value="44" />
+          <entry key="CLASS" value="6" />
+          <entry key="Cucumber" value="51" />
           <entry key="HTML" value="4" />
-          <entry key="Image" value="22" />
-          <entry key="JAVA" value="67" />
+          <entry key="Image" value="25" />
+          <entry key="JAVA" value="97" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="4" />
-          <entry key="XML" value="6" />
+          <entry key="Properties" value="8" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="feature" value="10088" />
-          <entry key="java" value="14070" />
-          <entry key="properties" value="94" />
-          <entry key="xml" value="44" />
+          <entry key="feature" value="10215" />
+          <entry key="java" value="15548" />
+          <entry key="properties" value="129" />
+          <entry key="xml" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="10088" />
-          <entry key="JAVA" value="14070" />
+          <entry key="Cucumber" value="10215" />
+          <entry key="JAVA" value="15548" />
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Properties" value="94" />
-          <entry key="XML" value="44" />
+          <entry key="Properties" value="129" />
+          <entry key="XML" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -160,10 +137,89 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/event.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="24" column="127" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceVendorList.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,65 +230,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8041">
-              <caret line="484" selection-start-line="484" selection-end-line="484" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/VendorList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/EventsList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/AddEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/event.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="115" selection-start-line="15" selection-start-column="115" selection-end-line="15" selection-end-column="115" />
+            <state relative-caret-position="7429">
+              <caret line="450" column="16" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -249,20 +248,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ea</find>
+      <find>random</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="mybranch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/UsersPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/helpers/HoverOver.java" />
@@ -279,33 +278,37 @@
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ServiceVendorList.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/serviceVendorList.feature" />
         <option value="$PROJECT_DIR$/src/main/resources/extent-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ConfigFileReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/UsersListPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/TestDataRandom.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/university.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/sanity.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/branchList.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/serviceCategory.feature" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ServiceSubCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/AddServiceSubCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/features/serviceSubCategory.feature" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/MyUtilites.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/vendorApp.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/studentApp.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/EventList.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/VendorList.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/AddEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/EventsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/Made.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/sanity.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/MyUtilites.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Waits.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/TestData.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/branchList.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/event.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -316,10 +319,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="714" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
     <option name="y" value="20" />
-    <option name="width" value="642" />
+    <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -328,7 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -354,23 +356,39 @@
               <item name="socialFresher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="socialFresher" type="b2602c69:ProjectViewProjectNode" />
               <item name="socialFresher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="socialFresher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialFresher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="socialFresher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialFresher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541955054383" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543190707455" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Project/Sriram" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -385,24 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
-    <configuration name="Feature: sanity" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/sanity.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="socialFresher" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: sanity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber java.Scenario: admin  should be able to add">
     <configuration name="Feature: university" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/university.feature" />
@@ -440,6 +441,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: admin  should be able to add  an event with mantatory field" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/event.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="socialFresher" />
+      <option name="NAME_FILTER" value="^admin  should be able to add  an event with mantatory field$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^admin  should be able to add  an event with mantatory field$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: admin  should be able to add  an event with mantatory field" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: admin  should be able to add" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/event.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="socialFresher" />
+      <option name="NAME_FILTER" value="^admin  should be able to add$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^admin  should be able to add$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: admin  should be able to add" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="socialFresher" />
       <extension name="coverage">
@@ -457,17 +496,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: sanity" />
       <item itemvalue="TestNG.TestRunner" />
       <item itemvalue="Cucumber java.Scenario: : adding university" />
       <item itemvalue="Cucumber java.Feature: university" />
+      <item itemvalue="Cucumber java.Scenario: admin  should be able to add  an event with mantatory field" />
+      <item itemvalue="Cucumber java.Scenario: admin  should be able to add" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: admin  should be able to add" />
         <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber java.Scenario: admin  should be able to add  an event with mantatory field" />
         <item itemvalue="Cucumber java.Feature: university" />
         <item itemvalue="Cucumber java.Scenario: : adding university" />
-        <item itemvalue="Cucumber java.Feature: sanity" />
       </list>
     </recent_temporary>
   </component>
@@ -493,41 +534,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2018.11.11 at 00h 38m 12s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 16h 41m 08s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 00h 39m 30s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 16h 43m 54s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 00h 41m 38s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 17h 03m 43s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 00h 48m 25s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 17h 05m 06s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 00h 51m 38s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 17h 07m 02s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 00h 59m 56s.xml">
+    <history-entry file="TestRunner - 2018.11.25 at 17h 08m 27s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 01h 01m 46s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
+    <history-entry file="Scenario__admin__should_be_able_to_add - 2018.11.25 at 17h 11m 25s.xml">
+      <configuration name="Scenario: admin  should be able to add" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 01h 04m 48s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
+    <history-entry file="Scenario__admin__should_be_able_to_add - 2018.11.25 at 17h 38m 19s.xml">
+      <configuration name="Scenario: admin  should be able to add" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 01h 07m 05s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
+    <history-entry file="Scenario__admin__should_be_able_to_add - 2018.11.25 at 17h 51m 19s.xml">
+      <configuration name="Scenario: admin  should be able to add" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.11.11 at 01h 17m 22s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
+    <history-entry file="Scenario__admin__should_be_able_to_add - 2018.11.25 at 17h 51m 53s.xml">
+      <configuration name="Scenario: admin  should be able to add" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2118003" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -536,7 +578,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32879046" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35775128" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,15 +633,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199102450.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199631160.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199684952.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199769392.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199818922.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199844368.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541199974994.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541200068741.png" />
-    <entry file="file://$PROJECT_DIR$/screenShots/1541200086257.png" />
     <entry file="file://$PROJECT_DIR$/screenShots/1541200125004.png" />
     <entry file="file://$PROJECT_DIR$/screenShots/1541200268877.png" />
     <entry file="file://$PROJECT_DIR$/screenShots/1541200348975.png" />
@@ -617,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helpers/AlertHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/UsersListPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -638,30 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/ConfigFileReader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestDataRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/vendorSubtype.feature">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/sanity.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hs_err_pid65512.log">
       <provider selected="true" editor-type-id="text-editor" />
@@ -673,21 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenShots/1541705518151.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/helpers/DropDownHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helpers/HoverOverHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -696,13 +687,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FailedTestsScreenshots/abc20181109094046.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceVendorList.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceSubCategory.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -714,33 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/MyUtilites.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -751,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceCategory.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/vendorApp.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -765,47 +715,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/branchList.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8041">
-          <caret line="484" selection-start-line="484" selection-end-line="484" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenshots/abc0935.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/VendorList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/Made.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -813,9 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,9 +741,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helpers/DropDownHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenShots/1542227923847.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helpers/AlertHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/sanity.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/RandomStringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceCategory.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -836,10 +789,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ServiceCategoryListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/AddServiceCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Waits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DashBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/MyUtilites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/branchList.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/event.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="115" selection-start-line="15" selection-start-column="115" selection-end-line="15" selection-end-column="115" />
+        <state relative-caret-position="476">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/serviceVendorList.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/MyStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7429">
+          <caret line="450" column="16" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/browserFactory/BrowserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="127" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>

@@ -20,8 +20,8 @@ Feature: Verify admin can register and edit a branch
 
       Examples:
       |vendor_List | branch_name|branch_email|password|address1|latitude|longitude|city|phone_number|
-      |wagamama_ravi|East ham branch |eastham@gmail.com|eastham|43, rudland, eastham|17.45|16.17|London|4564567564|
-      |wagamama_ravi|Stratford branch  |stratford@gmail.com |stratford |43, rudland, stratford |17.45|16.17|London|4564567564|
+      |wagamama_ravi|East ham branch1 |eastham@gmail.com|eastham|43, rudland, eastham|17.45|16.17|London|4564567564|
+#      |wagamama_ravi|Stratford branch  |stratford@gmail.com |stratford |43, rudland, stratford |17.45|16.17|London|4564567564|
 
   @branch_negative
   Scenario Outline: admin should not be able to add vendor-branch without mandatory fields

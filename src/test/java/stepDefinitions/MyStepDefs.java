@@ -6,12 +6,14 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pageObjects.*;
-import utils.TestDataRandom;
+import utils.TestData;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class MyStepDefs {
     LoginPage loginPage;
@@ -31,7 +33,7 @@ public class MyStepDefs {
     EventsList eventsList;
     AddEvent addEvent;
     public static String randomData = RandomStringUtils.randomAlphabetic(4);
-
+    WebDriver driver;
 
     // *** positive and negative-login scenario ***//
 
@@ -45,7 +47,11 @@ public class MyStepDefs {
     public void admin_enters_email_as_password_as(String arg1, String arg2) throws Throwable {
         loginPage = new LoginPage();
 //        LoginPage.login(arg1, arg2); //test
-        LoginPage.login(BrowserFactory.properties.getProperty("adminEmail"), BrowserFactory.properties.getProperty("adminPassword"));
+//        TestData.dataBase();
+//        LoginPage.login(TestData.resultSet.getString("name"),
+//                BrowserFactory.properties.getProperty("adminPassword"));
+        LoginPage.login(BrowserFactory.properties.getProperty("adminEmail"),
+                BrowserFactory.properties.getProperty("adminPassword"));
     }
 
     //testing for above step with datatable
@@ -448,10 +454,14 @@ public class MyStepDefs {
         Assert.assertEquals(VendorList.verifyVendorListPage(), "List of vendors");
     }
 
-    @When("^admin  add the event for vendor with name \"([^\"]*)\"$")
-    public void admin_add_the_event_for_vendor_with_name(String arg1) throws Throwable {
-        VendorList.search(arg1);
-        VendorList.addEvent();
+    @When("^admin add the event for vendor$")
+    public void admin_add_the_event_for_vendor_with_name(DataTable dataTable) throws Throwable {
+       for (Map<String, String> data : dataTable.asMaps(String.class, String.class)){
+
+            VendorList.search(data.get("vendor"));
+            VendorList.addEvent();
+        }
+
     }
 
     @When("^admin can see the list of events page$")
@@ -471,10 +481,21 @@ public class MyStepDefs {
 //        Assert.assertEquals(AddEvent.verifyAddEventPage(), "Create Event");
     }
 
-    @When("^admin enters the event details as \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
-    public void admin_enters_the_event_details_as(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13) throws Throwable {
-        AddEvent.setSelectCategory(arg8);
-        AddEvent.enterEventDetails(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg9, arg10, arg11, arg12, arg13);
+//    @When("^admin enters the event details as \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+//    public void admin_enters_the_event_details_as(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13) throws Throwable {
+//        AddEvent.setSelectCategory(arg8);
+//        AddEvent.enterEventDetails(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg9, arg10, arg11, arg12, arg13);
+//    }
+
+    @When("^admin enters the event details$")
+    public void admin_enters_the_event_details(DataTable dataTable) throws Throwable {
+        for (Map<String, String> data : dataTable.asMaps(String.class, String.class)){
+            AddEvent.setSelectCategory(data.get("event category"));
+            AddEvent.enterEventDetails(data.get("event name"), data.get("event description"), data.get("event start time"), data.get("event end time"),
+                    data.get("lognitude"), data.get("event start date"), data.get("event end date"), data.get("address"),
+                    data.get("city"), data.get("latitude"), data.get("terms and conditions"), data.get("image"));
+        }
+
     }
 
     @Then("^admin should able to see the added event \"([^\"]*)\"$")
@@ -483,6 +504,29 @@ public class MyStepDefs {
         Assert.assertEquals(EventsList.getEventName(), arg1);
     }
 
+
+    //*** testing ***//
+
+
+    @Given("^customer is on argos home page$")
+    public void customer_is_on_argos_home_page() throws Throwable {
+        driver.findElement(By.linkText("Technology")).click();
+    }
+
+    @When("^he clicks on technology button$")
+    public void he_clicks_on_technology_button() throws Throwable {
+
+    }
+
+    @When("^he clicks on a laptop$")
+    public void he_clicks_on_a_laptop() throws Throwable {
+
+    }
+
+    @Then("^he should be able to see the available laptos$")
+    public void he_should_be_able_to_see_the_available_laptos() throws Throwable {
+
+    }
 
 
 }

@@ -78,6 +78,7 @@ public class BrowserFactory extends BasePage {
         }
     }
 
+
     public static void closeBrowser(){
         driver.quit();
     }

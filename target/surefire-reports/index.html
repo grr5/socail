@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="stepDefinitions.TestRunner" hash-for-method="feature(Admin can able to see, add and edit sub category types)">feature(Admin can able to see, add and edit sub category types)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="stepDefinitions.TestRunner" hash-for-method="feature(verify admin can add a event and edit event)">feature(verify admin can add a event and edit event)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -125,27 +125,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Admin can able to see, add and edit sub category types)">
-                  </a> <!-- feature(Admin can able to see, add and edit sub category types) -->
+                  <a name="feature(verify admin can add a event and edit event)">
+                  </a> <!-- feature(verify admin can add a event and edit event) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Admin can able to see, add and edit sub category types)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: IT Consulting
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;LAPTOP-NBRT2PUV&apos;, ip: &apos;192.168.134.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: driver.version: unknown
+                  <span class="parameters">(verify admin can add a event and edit event)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: IT Consulting
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;LAPTOP-NBRT2PUV&apos;, ip: &apos;192.168.134.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at helpers.DropDownHelper.selectByVisible(DropDownHelper.java:12)
-	at pageObjects.AddServiceSubCategory.selectServiceCategory(AddServiceSubCategory.java:33)
-	at stepDefinitions.MyStepDefs.admin_selects_service_category_type(MyStepDefs.java:425)
-	at ✽.When admin selects service category type &quot;IT Consulting&quot;(serviceSubCategory.feature:15)
+Caused by: java.lang.NullPointerException
+	at pageObjects.DashBoard.selectVendorList(DashBoard.java:57)
+	at stepDefinitions.MyStepDefs.admin_is_on_vendorlist_page(MyStepDefs.java:453)
+	at ✽.Given admin is on vendorlist page(event.feature:30)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -217,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'stepDefinitions.TestRunner')
-data.setCell(0, 3, 44062);
+data.setCell(0, 3, 12015);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -255,21 +245,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">234 ms</span>
+                <span class="method-start">329 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Admin can able to see, add and edit sub category types)</span>
-                <span class="method-start">315 ms</span>
+                <span class="method-name">feature(verify admin can add a event and edit event)</span>
+                <span class="method-start">549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">44385 ms</span>
+                <span class="method-start">12579 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">44393 ms</span>
+                <span class="method-start">12595 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

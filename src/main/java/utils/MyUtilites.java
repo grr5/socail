@@ -13,28 +13,38 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MyUtilites extends BasePage {
+    public static String screenshotName = "abc";
+    public static String dateName = new SimpleDateFormat("hhmm").format(new Date());
+    public static File destination = new File("./screenShots/" + System.currentTimeMillis() + ".jpg");
+//    public static String src = getScreenshot();
     public static void captureScreenshot(Scenario scenario) {
         if (scenario.isFailed()) {
 
             try {
                 TakesScreenshot ts = (TakesScreenshot) driver;
                 File source = ts.getScreenshotAs(OutputType.FILE);
-                FileUtils.copyFile(source, new File("./screenShots/" + System.currentTimeMillis() + ".png"));
+                FileUtils.copyFile(source, destination);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public static String getScreenhot() throws Exception {
-        String screenshotName = "abc";
-        String dateName = new SimpleDateFormat("hhmm").format(new Date());
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        //after execution, you could see a folder "FailedTestsScreenshots" under src folder
-        String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
-        File finalDestination = new File(destination);
-        FileUtils.copyFile(source, finalDestination);
-        return destination;
-    }
+//    public static String getScreenshot(){
+////        String screenshotName = "abc";
+////        String dateName = new SimpleDateFormat("hhmm").format(new Date());
+////        String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
+//        try {
+//            TakesScreenshot ts = (TakesScreenshot) driver;
+//            File source = ts.getScreenshotAs(OutputType.FILE);
+//            //after execution, you could see a folder "FailedTestsScreenshots" under src folder
+//
+//            File finalDestination = new File(destination);
+//            FileUtils.copyFile(source, finalDestination);
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        return destination;
+//
+//    }
 }

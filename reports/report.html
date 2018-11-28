@@ -40,6 +40,7 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 11, 2018 01:16:50 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 28, 2018 12:22:16 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +80,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,7 +94,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@janci</a></li>
+					<li><a href='#'>@dataBase</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -139,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +172,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> others
 				</div>
 			</div>
 		</div>
@@ -186,78 +189,88 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verify admin can add a event and edit event</span>
-						<span class='test-time'>Nov 11, 2018 01:16:50 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 28, 2018 12:22:16 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 30s+284ms</span>
+<div class='scenario node' test-id='2' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@dataBase</span>
+	</div>
+	<span class='duration right label'>0h 0m 11s+739ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">admin  should be able to add  an event with mantatory field</span>
+		<b>Scenario</b>
+		<span class="desc-text">admin  should be able to add</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@janci</span>
-			</div>
+		<li test-id='3' class='node given fail' status='fail'>
 			
-			<b>Scenario</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">admin  should be able to add  an event with mantatory field</span>
+			<span class="bdd-step-name">Given admin is on vendorlist page</span>
+				<div class='pre'><pre>java.lang.NullPointerException
+	at pageObjects.DashBoard.selectVendorList(DashBoard.java:57)
+	at stepDefinitions.MyStepDefs.admin_is_on_vendorlist_page(MyStepDefs.java:453)
+	at ?.Given admin is on vendorlist page(event.feature:30)
+</pre></div>
 			
-				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given admin is on login page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='5' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When admin enters email as "email", password as "password"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='6' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And admin clicks on log in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then admin should login and see dashboard page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given admin is on vendorlist page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='9' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When admin  add the event for vendor with name "a_gosia2"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='10' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And admin can see the list of events page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='11' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And admin can click on add event</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='12' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then admin can see the creat event page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='13' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When admin enters the event details as "chrismas party2","fun","09:00","06:57","51.5653832","11/11/2018","12/11/2018","Celebration","east","london","-0.0000000","18+","C:\Users\Ravi\Desktop\Project\image.jpg"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then admin should able to see the added event "chrismas party2"</span>
-						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\Ravi\Downloads\socialFresher/FailedTestsScreenshots/abc0117.png"><i class='material-icons'>panorama</i></a></li>
-						</ul>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
+		</li>
+		<li test-id='4' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When admin add the event for vendor</span>
+				<div class='pre'><table><tr><td>vendor</td></tr><tr><td>a_gosia2</td></tr></table></div>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='5' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And admin can see the list of events page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='6' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And admin can click on add event</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='7' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then admin can see the creat event page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='8' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When admin enters the event details</span>
+				<div class='pre'><table><tr><td>vendor name</td><td>event name</td><td>event description</td><td>event start time</td><td>event end time</td><td>lognitude</td><td>event start date</td><td>event end date</td><td>event category</td><td>address</td><td>city</td><td>latitude</td><td>terms and conditions</td><td>image</td></tr><tr><td>a_gosia2</td><td>chrismas part</td><td>fun</td><td>09:00</td><td>06:57</td><td>51.5653832</td><td>11/11/2018</td><td>12/11/2018</td><td>Celebration</td><td>east</td><td>london</td><td>-0.0000000</td><td>18+</td><td>C:\Users\Ravi\Desktop\Project\image.jpg</td></tr><tr><td>a_gosia2</td><td>chrismas part1</td><td>fun</td><td>09:00</td><td>06:57</td><td>51.5653832</td><td>11/11/2018</td><td>12/11/2018</td><td>Celebration</td><td>east</td><td>london</td><td>-0.0000000</td><td>18+</td><td>C:\Users\Ravi\Desktop\Project\image.jpg</td></tr></table></div>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='9' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then admin should able to see the added event "<event name>"</span>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href=".\screenShots\1543407747917.jpg"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				<div class='pre'>skipped</div>
+				<div class='pre'>this is step log</div>
+			
 		</li>
 	</ul>
 </div>
@@ -315,15 +328,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@janci</span>
+						<span class='category-name'>@dataBase</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -338,9 +351,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 11, 2018 01:16:50 AM</td>
-										<td class='linked' test-id='3'>verify admin can add a event and edit event.admin  should be able to add  an event with mantatory field.admin  should be able to add  an event with mantatory field</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Nov 28, 2018 12:22:16 PM</td>
+										<td class='linked' test-id='2'>verify admin can add a event and edit event.admin  should be able to add</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -387,13 +400,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Ravi</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
                                     
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -408,9 +421,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Nov 11, 2018 01:16:50 AM</td>
-                                                <td class='linked' test-id='3'>verify admin can add a event and edit event.admin  should be able to add  an event with mantatory field.admin  should be able to add  an event with mantatory field</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td>Nov 28, 2018 12:22:16 PM</td>
+                                                <td class='linked' test-id='2'>verify admin can add a event and edit event.admin  should be able to add</td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -425,6 +438,71 @@
     <div class='subview-right left'>
         <div class='view-summary'>
             <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Nov 28, 2018 12:22:27 PM</td>
+                                                        <td class='linked' test-id='3'>verify admin can add a event and edit event.admin  should be able to add.Given admin is on vendorlist page</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
+	at pageObjects.DashBoard.selectVendorList(DashBoard.java:57)
+	at stepDefinitions.MyStepDefs.admin_is_on_vendorlist_page(MyStepDefs.java:453)
+	at ?.Given admin is on vendorlist page(event.feature:30)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
         </div>
     </div>
 </div>
@@ -449,25 +527,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 11, 2018 01:16:50 AM</div>
+					<div class='panel-lead'>Nov 28, 2018 12:22:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 11, 2018 01:17:21 AM</div>
+			 		<div class='panel-lead'>Nov 28, 2018 12:22:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>31,004ms</div>
+					<div class='panel-lead'>11,904ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -481,7 +559,7 @@
 						</tr>
 							<tr>
 								<td>User Name </td>
-								<td>Ravi</td>
+								<td>LAPTOP-NBRT2PUV$</td>
 							</tr>
 							<tr>
 								<td>Time Zone</td>
@@ -519,12 +597,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@janci</td>
+							<td>@dataBase</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -540,31 +618,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 11,
-				failGrandChild: 0,
+				passGrandChild: 0,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 7,
 			};
 		</script>
 		

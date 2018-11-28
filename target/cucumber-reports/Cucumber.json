@@ -3,16 +3,10 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 17,
-            "value": "#    |a_gosia2   |chrismas party|fun          |09:00           |06:57         |51.5653832|11/11/2018     |12/11/2018    |Celebration   |east   |london|-0.0000000|18+             |C:\\Users\\Ravi\\Desktop\\Project\\image.jpg|"
-          }
-        ],
         "before": [
           {
             "result": {
-              "duration": 10147934394,
+              "duration": 10767056697,
               "status": "passed"
             },
             "match": {
@@ -20,14 +14,14 @@
             }
           }
         ],
-        "line": 18,
-        "name": "admin  should be able to add  an event with mantatory field",
+        "line": 29,
+        "name": "admin  should be able to add",
         "description": "",
-        "id": "verify-admin-can-add-a-event-and-edit-event;admin--should-be-able-to-add--an-event-with-mantatory-field;;2",
+        "id": "verify-admin-can-add-a-event-and-edit-event;admin--should-be-able-to-add",
         "after": [
           {
             "result": {
-              "duration": 335448651,
+              "duration": 507856917,
               "status": "passed"
             },
             "match": {
@@ -36,72 +30,15 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 131782505,
-              "status": "passed"
+              "duration": 268389602,
+              "error_message": "java.lang.NullPointerException\r\n\tat pageObjects.DashBoard.selectVendorList(DashBoard.java:57)\r\n\tat stepDefinitions.MyStepDefs.admin_is_on_vendorlist_page(MyStepDefs.java:453)\r\n\tat ✽.Given admin is on vendorlist page(event.feature:30)\r\n",
+              "status": "failed"
             },
-            "line": 4,
-            "name": "admin is on login page",
-            "match": {
-              "location": "MyStepDefs.admin_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 399148260,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "admin enters email as \"email\", password as \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "email",
-                  "offset": 23
-                },
-                {
-                  "val": "password",
-                  "offset": 44
-                }
-              ],
-              "location": "MyStepDefs.admin_enters_email_as_password_as(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4804256198,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "admin clicks on log in button",
-            "match": {
-              "location": "MyStepDefs.admin_clicks_on_log_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53806064,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "admin should login and see dashboard page",
-            "match": {
-              "location": "MyStepDefs.admin_should_login_and_see_dashboard_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2054349354,
-              "status": "passed"
-            },
-            "line": 8,
+            "line": 30,
             "name": "admin is on vendorlist page",
             "match": {
               "location": "MyStepDefs.admin_is_on_vendorlist_page()"
@@ -110,31 +47,34 @@
           },
           {
             "result": {
-              "duration": 1228636379,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "admin  add the event for vendor with name \"a_gosia2\"",
+            "line": 31,
+            "name": "admin add the event for vendor",
             "match": {
-              "arguments": [
-                {
-                  "val": "a_gosia2",
-                  "offset": 43
-                }
-              ],
-              "location": "MyStepDefs.admin_add_the_event_for_vendor_with_name(String)"
+              "location": "MyStepDefs.admin_add_the_event_for_vendor_with_name(DataTable)"
             },
-            "matchedColumns": [
-              0
+            "rows": [
+              {
+                "cells": [
+                  "vendor"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "a_gosia2"
+                ],
+                "line": 33
+              }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 41250690,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 10,
+            "line": 34,
             "name": "admin can see the list of events page",
             "match": {
               "location": "MyStepDefs.admin_can_see_the_list_of_events_page()"
@@ -143,10 +83,9 @@
           },
           {
             "result": {
-              "duration": 703215303,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 11,
+            "line": 35,
             "name": "admin can click on add event",
             "match": {
               "location": "MyStepDefs.admin_can_click_on_add_event()"
@@ -155,10 +94,9 @@
           },
           {
             "result": {
-              "duration": 2210133,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 12,
+            "line": 36,
             "name": "admin can see the creat event page",
             "match": {
               "location": "MyStepDefs.admin_can_see_the_creat_event_page()"
@@ -167,111 +105,96 @@
           },
           {
             "result": {
-              "duration": 10247664569,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "admin enters the event details as \"chrismas party2\",\"fun\",\"09:00\",\"06:57\",\"51.5653832\",\"11/11/2018\",\"12/11/2018\",\"Celebration\",\"east\",\"london\",\"-0.0000000\",\"18+\",\"C:\\Users\\Ravi\\Desktop\\Project\\image.jpg\"",
+            "line": 37,
+            "name": "admin enters the event details",
             "match": {
-              "arguments": [
-                {
-                  "val": "chrismas party2",
-                  "offset": 35
-                },
-                {
-                  "val": "fun",
-                  "offset": 53
-                },
-                {
-                  "val": "09:00",
-                  "offset": 59
-                },
-                {
-                  "val": "06:57",
-                  "offset": 67
-                },
-                {
-                  "val": "51.5653832",
-                  "offset": 75
-                },
-                {
-                  "val": "11/11/2018",
-                  "offset": 88
-                },
-                {
-                  "val": "12/11/2018",
-                  "offset": 101
-                },
-                {
-                  "val": "Celebration",
-                  "offset": 114
-                },
-                {
-                  "val": "east",
-                  "offset": 128
-                },
-                {
-                  "val": "london",
-                  "offset": 135
-                },
-                {
-                  "val": "-0.0000000",
-                  "offset": 144
-                },
-                {
-                  "val": "18+",
-                  "offset": 157
-                },
-                {
-                  "val": "C:\\Users\\Ravi\\Desktop\\Project\\image.jpg",
-                  "offset": 163
-                }
-              ],
-              "location": "MyStepDefs.admin_enters_the_event_details_as(String,String,String,String,String,String,String,String,String,String,String,String,String)"
+              "location": "MyStepDefs.admin_enters_the_event_details(DataTable)"
             },
-            "matchedColumns": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12,
-              13
+            "rows": [
+              {
+                "cells": [
+                  "vendor name",
+                  "event name",
+                  "event description",
+                  "event start time",
+                  "event end time",
+                  "lognitude",
+                  "event start date",
+                  "event end date",
+                  "event category",
+                  "address",
+                  "city",
+                  "latitude",
+                  "terms and conditions",
+                  "image"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "a_gosia2",
+                  "chrismas part",
+                  "fun",
+                  "09:00",
+                  "06:57",
+                  "51.5653832",
+                  "11/11/2018",
+                  "12/11/2018",
+                  "Celebration",
+                  "east",
+                  "london",
+                  "-0.0000000",
+                  "18+",
+                  "C:\\Users\\Ravi\\Desktop\\Project\\image.jpg"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "a_gosia2",
+                  "chrismas part1",
+                  "fun",
+                  "09:00",
+                  "06:57",
+                  "51.5653832",
+                  "11/11/2018",
+                  "12/11/2018",
+                  "Celebration",
+                  "east",
+                  "london",
+                  "-0.0000000",
+                  "18+",
+                  "C:\\Users\\Ravi\\Desktop\\Project\\image.jpg"
+                ],
+                "line": 40
+              }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 340752400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 14,
-            "name": "admin should able to see the added event \"chrismas party2\"",
+            "line": 42,
+            "name": "admin should able to see the added event \"\u003cevent name\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "chrismas party2",
+                  "val": "\u003cevent name\u003e",
                   "offset": 42
                 }
               ],
               "location": "MyStepDefs.admin_should_able_to_see_the_added_event(String)"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 2,
-            "name": "@janci"
+            "line": 28,
+            "name": "@dataBase"
           }
         ]
       }

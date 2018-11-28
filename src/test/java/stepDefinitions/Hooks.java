@@ -15,8 +15,10 @@ public class Hooks {
         browserFactory = new BrowserFactory();
         BrowserFactory.openBrowser();
 
-        if (scenario.getName().equals("admin should be able to add university with mandatory fields successfully")){
-            Reporter.assignAuthor("Ravi");
+        if (scenario.getName().equals("admin  should be able to add  an event with mantatory field")){
+            Reporter.assignAuthor("Ravinder");
+        } else if (scenario.getName().equals("admin should be able to activate or de-activate a user")){
+            Reporter.assignAuthor("Ravi Reddy");
         } else {
             Reporter.assignAuthor("Ravi");
         }
@@ -25,7 +27,10 @@ public class Hooks {
     @After
     public void afterScenario(Scenario scenario) throws Exception{
 //        MyUtilites.captureScreenshot(scenario);
-        MyUtilites.getScreenhot();
+//        MyUtilites.getScreenshot();
 //        BrowserFactory.closeBrowser();
+        MyUtilites.captureScreenshot(scenario);
+        Reporter.addScreenCaptureFromPath(MyUtilites.destination.toString());
     }
+
 }

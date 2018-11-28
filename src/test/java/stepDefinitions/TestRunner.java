@@ -20,10 +20,11 @@ import java.io.File;
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:reports/report.html",
                 "html:target/cucumber-reports",
                 "json:target/cucumber-reports/Cucumber.json"},
-        tags = {"@janci"},
+        tags = {"@dataBase"},
         dryRun = false,
-        monochrome = true
-//        strict = true
+        monochrome = true,
+
+        strict = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
@@ -44,9 +45,11 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         Reporter.setSystemInfo("Selenium", "3.14.0");
         Reporter.setSystemInfo("Maven", "3.5.4");
         Reporter.setSystemInfo("Java Version", "1.8.0_181");
-//        Reporter.addScreenCaptureFromPath(MyUtilites.getScreenhot());
 //        Reporter.addScreenCast(MyUtilites.getScreenhot());
-        Reporter.addScreenCaptureFromPath(MyUtilites.getScreenhot(), "this is title");
-//        Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+//        Reporter.addScreenCaptureFromPath(MyUtilites.src, "this is title");
+//        Reporter.addScreenCaptureFromPath(MyUtilites.destination);
+        Reporter.addScenarioLog("this is scenario log");
+        Reporter.addStepLog("this is step log");
+
     }
 }

@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Waits;
 
 public class LoginPage extends BasePage {
     public LoginPage(){
@@ -19,7 +20,7 @@ public class LoginPage extends BasePage {
     static WebElement loginButton;
 
     public static String verifyHomepage(){
-        return driver.getCurrentUrl().toString();
+        return driver.getCurrentUrl();
     }
 
     public static void login(String admEmail, String admPWD){

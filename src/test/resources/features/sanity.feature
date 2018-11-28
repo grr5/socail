@@ -39,7 +39,7 @@ Feature: Verify admin can see the list of available users and can activate or de
       Then admin should see the available user list successfully
 
         @user_active
-        Scenario Outline: : admin should be able to activate or de-activate a user
+        Scenario Outline: admin should be able to activate or de-activate a user
 
           Given admin is on dashboard page
           When admin clicks on user link
